@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tạo Multiple Pages on CI/CD với Github Actions</title>
+    <title>Tạo Multiple Pages on Triển Khai Hugo Website with Github Pages</title>
     <link>/vi/4-multiplepages/</link>
-    <description>Recent content in Tạo Multiple Pages on CI/CD với Github Actions</description>
+    <description>Recent content in Tạo Multiple Pages on Triển Khai Hugo Website with Github Pages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language><atom:link href="/vi/4-multiplepages/index.xml" rel="self" type="application/rss+xml" />
   </channel>

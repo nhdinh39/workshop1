@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Check Website Again on CI/CD with Github Actions</title>
+    <title>Check Website Again on Deploy Hugo Website with Github Pages</title>
     <link>/5-multiplepagescicd/5.5-checkagain/</link>
-    <description>Recent content in Check Website Again on CI/CD with Github Actions</description>
+    <description>Recent content in Check Website Again on Deploy Hugo Website with Github Pages</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="/5-multiplepagescicd/5.5-checkagain/index.xml" rel="self" type="application/rss+xml" />
   </channel>
