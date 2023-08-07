@@ -12,21 +12,21 @@
     <title>Update Code :: Deploy Hugo Website with Github Pages</title>
 
     
-    <link href="../../css/nucleus.css?1691076871" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1691076871" rel="stylesheet">
-    <link href="../../css/hybrid.css?1691076871" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1691076871" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1691076871" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1691076871" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1691076871" rel="stylesheet">
-    <link href="../../css/theme.css?1691076871" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1691076871" rel="stylesheet">
+    <link href="../../css/nucleus.css?1691377400" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1691377400" rel="stylesheet">
+    <link href="../../css/hybrid.css?1691377400" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1691377400" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1691377400" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1691377400" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1691377400" rel="stylesheet">
+    <link href="../../css/theme.css?1691377400" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1691377400" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1691076871" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1691377400" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1691076871"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1691377400"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1691076871"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1691076871"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1691377400"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1691377400"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1691076871"></script>
+<script type="text/javascript" src="../../js/search.js?1691377400"></script>
 
     
   </div>
@@ -830,43 +830,43 @@
 
 
 	
-<div class="notices warning" ><p>Trước khi thực hiện những bước dưới đây, hãy đảm bảo rằng máy tính bạn đã cài <strong>Visual Studio Code</strong><br>
-Nếu không bạn có thể download tại đây <a href="https://code.visualstudio.com/download">Download Visual Studio Code</a></p>
+<div class="notices warning" ><p>Before proceeding with the steps below, ensure that you have installed <strong>Visual Studio Code</strong> on your computer.<br>
+If not, you can download them here: <a href="https://code.visualstudio.com/download">Download Visual Studio Code</a></p>
 </div>
 
-<h4 id="trình-tự-thực-hiện">Trình tự thực hiện</h4>
+<h4 id="excecution-sequence">Excecution Sequence</h4>
 <ol>
-<li>Tại giao diện <strong>Git bash</strong></li>
+<li>In the <strong>Git bash</strong> interface</li>
 </ol>
 <ul>
-<li>Thực hiện câu lệnh <code>git pull</code> để cập nhật tất cả những thay đổi mới nhất của Github Repository <strong>workshop2</strong> của chúng ta về máy local</li>
+<li>Execute the command <code>git pull</code> to update all the latest changes from your Github Repository <strong>workshop2</strong> to your local machine</li>
 </ul>
 <pre tabindex="0"><code>git pull
 </code></pre><p><img src="../../images/5-MultiplePagesCICD/5.4/5.4.1.png" alt="UPDATE"></p>
 <ul>
-<li>Thực hiện câu lệnh <code>code .</code>  để mở thư mục hiện tại bằng <strong>Visual Studio Code</strong></li>
+<li>Execute the command <code>code .</code> to open the current directory with <strong>Visual Studio Code</strong></li>
 </ul>
 <pre tabindex="0"><code>code .
 </code></pre><p><img src="../../images/5-MultiplePagesCICD/5.4/5.4.2.png" alt="UPDATE"></p>
 <ol start="2">
-<li>Trong giao diện <strong>Visual Studio Code</strong> vừa được mở</li>
+<li>In the <strong>Visual Studio Code</strong> interface that has just opened</li>
 </ol>
 <ul>
-<li>Tại thư mục <strong>content</strong>, chọn <strong>_index.md</strong>, ta thực hiện thay đổi</li>
+<li>In the <strong>content</strong> folder, select <strong>_index.md</strong>, we make changes</li>
 </ul>
 <pre tabindex="0"><code># Work with Amazon System Manager - Session Manager
 </code></pre><ul>
-<li>Thành</li>
+<li>To</li>
 </ul>
 <pre tabindex="0"><code># Work with Amazon System Manager - Session Manager - CI/CD
 </code></pre><p><img src="../../images/5-MultiplePagesCICD/5.4/5.4.3.png" alt="UPDATE"></p>
 <ol start="3">
 <li>
-<p><strong>Save</strong> lại. Và thoát khỏi <strong>Visual Studio Code</strong></p>
+<p><strong>Save</strong> the changes. And exit <strong>Visual Studio Code</strong></p>
 </li>
 <li>
-<p>Quay trở lại giao diện <strong>Git bash</strong> tiến hành <strong>push code</strong> lên Github Repository của chúng ta.<br>
-Bằng cách thực hiện lần lượt các câu lệnh phía dưới.</p>
+<p>Return to the <strong>Git bash</strong> interface and proceed to <strong>push code</strong> on our Github Repository.<br>
+By executing the following commands</p>
 </li>
 </ol>
 <pre tabindex="0"><code>git add .
@@ -1253,19 +1253,19 @@ git push
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1691076871"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1691076871"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1691076871"></script>
-    <script src="../../js/jquery.sticky.js?1691076871"></script>
-    <script src="../../js/featherlight.min.js?1691076871"></script>
-    <script src="../../js/highlight.pack.js?1691076871"></script>
+    <script src="../../js/clipboard.min.js?1691377400"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1691377400"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1691377400"></script>
+    <script src="../../js/jquery.sticky.js?1691377400"></script>
+    <script src="../../js/featherlight.min.js?1691377400"></script>
+    <script src="../../js/highlight.pack.js?1691377400"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1691076871"></script>
-    <script src="../../js/learn.js?1691076871"></script>
-    <script src="../../js/hugo-learn.js?1691076871"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1691377400"></script>
+    <script src="../../js/learn.js?1691377400"></script>
+    <script src="../../js/hugo-learn.js?1691377400"></script>
 
-    <link href="../../mermaid/mermaid.css?1691076871" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1691076871"></script>
+    <link href="../../mermaid/mermaid.css?1691377400" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1691377400"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

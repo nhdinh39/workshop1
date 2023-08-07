@@ -12,21 +12,21 @@
     <title>Prepare Source Code :: Deploy Hugo Website with Github Pages</title>
 
     
-    <link href="../../css/nucleus.css?1691076871" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1691076871" rel="stylesheet">
-    <link href="../../css/hybrid.css?1691076871" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1691076871" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1691076871" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1691076871" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1691076871" rel="stylesheet">
-    <link href="../../css/theme.css?1691076871" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1691076871" rel="stylesheet">
+    <link href="../../css/nucleus.css?1691377400" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1691377400" rel="stylesheet">
+    <link href="../../css/hybrid.css?1691377400" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1691377400" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1691377400" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1691377400" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1691377400" rel="stylesheet">
+    <link href="../../css/theme.css?1691377400" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1691377400" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1691076871" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1691377400" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1691076871"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1691377400"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1691076871"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1691076871"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1691377400"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1691377400"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1691076871"></script>
+<script type="text/javascript" src="../../js/search.js?1691377400"></script>
 
     
   </div>
@@ -830,59 +830,59 @@
 
 
 	
-<div class="notices warning" ><p>Trước khi thực hiện những bước dưới đây, hãy đảm bảo rằng máy tính bạn đã cài <strong>Git bash</strong><br>
-Nếu không bạn có thể download tại đây <a href="https://git-scm.com/downloads">Download Git bash</a></p>
+<div class="notices warning" ><p>Before proceeding with the steps below, make sure that you have <strong>Git Bash</strong> installed on your computer.<br>
+If not, you can download it here: <a href="https://git-scm.com/downloads">Download Git Bash</a></p>
 </div>
 
-<h4 id="trình-tự-thực-hiện">Trình tự thực hiện</h4>
+<h4 id="execution-sequence">Execution sequence</h4>
 <ol>
 <li>
-<p>Tạo một thư mục mới trên máy tính của bạn. Mình đặt tên là <strong>WORKSHOP</strong>
+<p>Create a new directory on your computer. I&rsquo;m naming it as <strong>WORKSHOP</strong>.
 <img src="../../images/2-Preparation/2.3/2.3.1.png" alt="CODE"></p>
 </li>
 <li>
-<p>Copy thư mục Hugo Source Code của bạn vào thư mục <strong>WORKSHOP</strong>.<br>
-Ở đây chúng ta sử dụng Source Code mẫu, bạn có thể <a href="https://github.com/Van-Hoang-Kha/van-hoang-kha.github.io/blob/master/source/000000-Workshop.zip">Tải Source Code Mẫu</a> và sau đó giải nén đến thư mục <strong>WORKSHOP</strong> với tên <strong>000058-SessionManager</strong>
+<p>Copy your Hugo Source Code folder into the <strong>WORKSHOP</strong> directory.<br>
+Here we are using a Sample Source Code. You can <a href="https://github.com/Van-Hoang-Kha/van-hoang-kha.github.io/blob/master/source/000000-Workshop.zip">Download the Sample Source Code</a>, then unzip it into the <strong>WORKSHOP</strong> directory with the name <strong>000058-SessionManager</strong>
 <img src="../../images/2-Preparation/2.3/2.3.2.png" alt="CODE"></p>
 </li>
 <li>
-<p>Điều hướng vào bên trong thư mục <strong>000058-SessionManager</strong></p>
+<p>Navigate into the <strong>000058-SessionManager</strong> directory</p>
 </li>
 </ol>
 <ul>
 <li>
-<p>Click chuột phải tại vùng trống của thư mục, chọn <strong>Git Bash Here</strong>
+<p>Right-click in an empty area of the folder, then choose <strong>Git Bash Here</strong>
 <img src="../../images/2-Preparation/2.3/2.3.3.png" alt="CODE"></p>
 </li>
 <li>
-<p>Giao diện <strong>Git Bash</strong> hiện ra, ấn đồng thời phím <strong>Window</strong> và <strong>phím mũi tên 🡒</strong> hoặc <strong>Window</strong> và <strong>phím mũi tên ⭠</strong> để chia đôi màn hình thành hai cửa sổ, <br>
-bên phải là cửa sổ <strong>Git bash</strong>, bên trái là thư mục <strong>000058-SessionManager</strong> để dễ thao tác cho những bước sau. (Không bắt buộc)
+<p>The <strong>Git Bash</strong> interface will appear. Press the <strong>Windows key</strong> along with the <strong>right arrow 🡒</strong> or <strong>left arrow ⭠</strong> to split the screen into two windows.<br>
+On the right is the <strong>Git Bash</strong> window, and on the left is the <strong>000058-SessionManager</strong> directory for easier operations in the following steps. (This is optional)
 <img src="../../images/2-Preparation/2.3/2.3.4.png" alt="CODE"></p>
 </li>
 </ul>
 <ol start="4">
-<li>Tại giao diện <strong>Git bash</strong>, lần lượt thực hiện các câu lệnh</li>
+<li>In the <strong>Git Bash</strong> interface, execute the following commands:</li>
 </ol>
 <ul>
-<li>Hiển thị 10 dòng đầu tiên của file config.toml</li>
+<li>Display the first 10 lines of the config.toml file:</li>
 </ul>
 <pre tabindex="0"><code>head -10 config.toml
 </code></pre><ul>
-<li>Thêm thuộc tính  <code>relativeURLs = true</code> vào dòng đầu tiên của file config.toml</li>
+<li>Add the <code>relativeURLs=true</code> attribute to the first line of the config.toml file</li>
 </ul>
 <pre tabindex="0"><code>sed -i &#39;1 i\relativeURLs = true&#39; config.toml
 </code></pre><ul>
-<li>Hiển thị 10 dòng đầu tiên của file config.toml sau khi thay đổi, đã có thêm thuộc tính  <code>relativeURLs = true</code> ở dòng đầu tiên</li>
+<li>Displays the first 10 lines of the config.toml file after changing, has added the <code>relativeURLs = true</code> attribute in the first line</li>
 </ul>
 <pre tabindex="0"><code>head -10 config.toml
 </code></pre><ul>
-<li>Build lại Source Code Hugo sau khi đã có thay đổi trong file config.toml</li>
+<li>Rebuild Hugo Source Code after making changes in the config.toml file</li>
 </ul>
 <pre tabindex="0"><code>hugo
 </code></pre><p><img src="../../images/2-Preparation/2.3/2.3.5.png" alt="CODE"></p>
 
-<div class="notices warning" ><p>Thêm thuộc tính <code>relativeURLs = true</code> vào dòng đầu tiên của file config.toml là bước mấu chốt của bài Lab này.<br>
-Nó sẽ cập nhật tất cả các đường dẫn tài nguyên như <strong>css, images, &hellip;</strong> thành các đường dẫn tương đối, đảm bảo việc truy xuất tài nguyên đúng sau này.</p>
+<div class="notices warning" ><p>Adding the <code>relativeURLs = true</code> attribute to the first line of the config.toml file is the key step of this Lab.<br>
+It will update all resource paths like <strong>css, images, &hellip;</strong> to relative paths, ensuring correct resource retrieval later.</p>
 </div>
 
 
@@ -1265,19 +1265,19 @@ Nó sẽ cập nhật tất cả các đường dẫn tài nguyên như <strong>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1691076871"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1691076871"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1691076871"></script>
-    <script src="../../js/jquery.sticky.js?1691076871"></script>
-    <script src="../../js/featherlight.min.js?1691076871"></script>
-    <script src="../../js/highlight.pack.js?1691076871"></script>
+    <script src="../../js/clipboard.min.js?1691377400"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1691377400"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1691377400"></script>
+    <script src="../../js/jquery.sticky.js?1691377400"></script>
+    <script src="../../js/featherlight.min.js?1691377400"></script>
+    <script src="../../js/highlight.pack.js?1691377400"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1691076871"></script>
-    <script src="../../js/learn.js?1691076871"></script>
-    <script src="../../js/hugo-learn.js?1691076871"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1691377400"></script>
+    <script src="../../js/learn.js?1691377400"></script>
+    <script src="../../js/hugo-learn.js?1691377400"></script>
 
-    <link href="../../mermaid/mermaid.css?1691076871" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1691076871"></script>
+    <link href="../../mermaid/mermaid.css?1691377400" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1691377400"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

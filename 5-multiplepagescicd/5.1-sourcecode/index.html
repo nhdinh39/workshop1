@@ -12,21 +12,21 @@
     <title>Push Code to Repository :: Deploy Hugo Website with Github Pages</title>
 
     
-    <link href="../../css/nucleus.css?1691076871" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1691076871" rel="stylesheet">
-    <link href="../../css/hybrid.css?1691076871" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1691076871" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1691076871" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1691076871" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1691076871" rel="stylesheet">
-    <link href="../../css/theme.css?1691076871" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1691076871" rel="stylesheet">
+    <link href="../../css/nucleus.css?1691377400" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1691377400" rel="stylesheet">
+    <link href="../../css/hybrid.css?1691377400" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1691377400" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1691377400" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1691377400" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1691377400" rel="stylesheet">
+    <link href="../../css/theme.css?1691377400" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1691377400" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1691076871" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1691377400" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1691076871"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1691377400"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1691076871"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1691076871"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1691377400"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1691377400"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1691076871"></script>
+<script type="text/javascript" src="../../js/search.js?1691377400"></script>
 
     
   </div>
@@ -829,55 +829,55 @@
 
 
 
-	<p>Ta sẽ tiến hành clone repository của chúng ta đã tạo ở bước <strong>2.2</strong> bằng cú pháp:</p>
+	<p>We will proceed to clone our repository that we created in step <strong>2.2</strong> using the following syntax:</p>
 <pre tabindex="0"><code>git clone https://&lt;your_token&gt;@github.com/&lt;github_account&gt;/&lt;repository_name&gt;.git
-</code></pre><p>Với:</p>
+</code></pre><p>With:</p>
 <ul>
-<li><em>&lt;your_token&gt;</em> : Là token bạn đã lưu lại ở bước <strong>2.1</strong></li>
-<li><em>&lt;github_account&gt;</em> : Là tên tài khoản github của bạn</li>
-<li><em>&lt;repository_name&gt;</em> : Là tên repository bạn, trong trường hợp này là <strong>workshop2</strong></li>
+<li><em>&lt;your_token&gt;</em> : The token you saved in step <strong>2.1</strong></li>
+<li><em>&lt;github_account&gt;</em> : Your Github account username</li>
+<li><em>&lt;repository_name&gt;</em> : Your repository name, in this case <strong>workshop2</strong></li>
 </ul>
-<h4 id="trình-tự-thực-hiện">Trình tự thực hiện</h4>
+<h4 id="execution-senquence">Execution Senquence</h4>
 <ol>
 <li>
-<p>Chuẩn bị màn hình làm việc
+<p>Prepare the screen for work
 <img src="../../images/5-MultiplePagesCICD/5.1/5.1.1.png" alt="MULTIPLE"></p>
 </li>
 <li>
-<p>Từ giao diện <strong>Git bash</strong></p>
+<p>From the <strong>Git bash</strong> interface</p>
 </li>
 </ol>
 <ul>
-<li>Thực hiện câu lệnh <code>git clone</code>, hãy thay thế thông tin cho phù hợp với bạn</li>
+<li>Execute the command <code>git clone</code> using the above mentioned syntax. Please change the information to suit you</li>
 </ul>
 <pre tabindex="0"><code>git clone https://&lt;your_token&gt;@github.com/&lt;github_account&gt;/workshop2.git
 </code></pre><p><img src="../../images/5-MultiplePagesCICD/5.1/5.1.2.png" alt="MULTIPLE"></p>
 <ul>
-<li>Ta thấy thư mục <strong>workshop2</strong> xuất hiện</li>
+<li>We will see the <strong>workshop2</strong> folder appears</li>
 </ul>
 <ol start="3">
-<li>Điều hướng đến thư mục <strong>000058-SessionManager</strong></li>
+<li>Navigate to the <strong>000058-SessionManager</strong> folder</li>
 </ol>
 <ul>
-<li><strong>Copy tất cả Source Code</strong> tại đây ngoại trừ thư mục <strong>Public</strong>
+<li><strong>Copy all Source Code</strong> here except <strong>public</strong> folder
 <img src="../../images/5-MultiplePagesCICD/5.1/5.1.3.png" alt="MULTIPLE"></li>
 </ul>
 <ol start="4">
-<li>Điều hướng đến thư mục <strong>workshop2</strong> vừa được clone về ở trên</li>
+<li>Navigate to the <strong>workshop2</strong> folder just cloned above</li>
 </ol>
 <ul>
-<li><strong>Dán tất cả Source Code</strong> vừa được <strong>Copy</strong> vào
+<li><strong>Paste all Source Code</strong> just <strong>Copy</strong>
 <img src="../../images/5-MultiplePagesCICD/5.1/5.1.4.png" alt="MULTIPLE"></li>
 </ul>
 <ol start="5">
-<li>Quay trở lại giao diện <strong>Git bash</strong></li>
+<li>Return to the <strong>Git bash</strong> interface</li>
 </ol>
 <ul>
-<li>Điều hướng đến thư mục <strong>workshop2</strong></li>
+<li>Navigate to the <strong>workshop2</strong> folder</li>
 </ul>
 <pre tabindex="0"><code>cd workshop2
 </code></pre><ul>
-<li>Push tất cả Source Code cần thiết lên trên Repository bằng các câu lệnh</li>
+<li>Push all Source Code to Repository with commands</li>
 </ul>
 <pre tabindex="0"><code>git add .
 git commit -m &#34;Add Source Code&#34;
@@ -885,7 +885,7 @@ git push
 </code></pre><p><img src="../../images/5-MultiplePagesCICD/5.1/5.1.5.png" alt="MULTIPLE">
 <img src="../../images/5-MultiplePagesCICD/5.1/5.1.6.png" alt="MULTIPLE"></p>
 <ol start="6">
-<li>Truy cập vào trang Repository <strong>workshop2</strong> của chúng ta trên Github, ta thấy Source Code với commit message <strong>Add Source Code</strong> vừa xuất hiện</li>
+<li>Access our <strong>workshop2</strong> repository interface on Github, we will see the Source Code with the commit message <strong>Add Source Code</strong> just appeared</li>
 </ol>
 <p><img src="../../images/5-MultiplePagesCICD/5.1/5.1.7.png" alt="MULTIPLE"></p>
 
@@ -1265,19 +1265,19 @@ git push
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1691076871"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1691076871"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1691076871"></script>
-    <script src="../../js/jquery.sticky.js?1691076871"></script>
-    <script src="../../js/featherlight.min.js?1691076871"></script>
-    <script src="../../js/highlight.pack.js?1691076871"></script>
+    <script src="../../js/clipboard.min.js?1691377400"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1691377400"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1691377400"></script>
+    <script src="../../js/jquery.sticky.js?1691377400"></script>
+    <script src="../../js/featherlight.min.js?1691377400"></script>
+    <script src="../../js/highlight.pack.js?1691377400"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1691076871"></script>
-    <script src="../../js/learn.js?1691076871"></script>
-    <script src="../../js/hugo-learn.js?1691076871"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1691377400"></script>
+    <script src="../../js/learn.js?1691377400"></script>
+    <script src="../../js/hugo-learn.js?1691377400"></script>
 
-    <link href="../../mermaid/mermaid.css?1691076871" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1691076871"></script>
+    <link href="../../mermaid/mermaid.css?1691377400" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1691377400"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

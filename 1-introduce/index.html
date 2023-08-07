@@ -12,21 +12,21 @@
     <title>Introduction :: Deploy Hugo Website with Github Pages</title>
 
     
-    <link href="../css/nucleus.css?1691076871" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1691076871" rel="stylesheet">
-    <link href="../css/hybrid.css?1691076871" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1691076871" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1691076871" rel="stylesheet">
-    <link href="../css/auto-complete.css?1691076871" rel="stylesheet">
-    <link href="../css/atom-one-dark-reasonable.css?1691076871" rel="stylesheet">
-    <link href="../css/theme.css?1691076871" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1691076871" rel="stylesheet">
+    <link href="../css/nucleus.css?1691377400" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1691377400" rel="stylesheet">
+    <link href="../css/hybrid.css?1691377400" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1691377400" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1691377400" rel="stylesheet">
+    <link href="../css/auto-complete.css?1691377400" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1691377400" rel="stylesheet">
+    <link href="../css/theme.css?1691377400" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1691377400" rel="stylesheet">
     
-    <link href="../css/theme-workshop.css?1691076871" rel="stylesheet">
+    <link href="../css/theme-workshop.css?1691377400" rel="stylesheet">
     
     
 
-    <script src="../js/jquery-3.3.1.min.js?1691076871"></script>
+    <script src="../js/jquery-3.3.1.min.js?1691377400"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1691076871"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1691076871"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1691377400"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1691377400"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../js/search.js?1691076871"></script>
+<script type="text/javascript" src="../js/search.js?1691377400"></script>
 
     
   </div>
@@ -795,7 +795,7 @@
   <ul>
     <li>
       <ul>
-        <li></li>
+        <li><a href="#github-pages">Github Pages</a></li>
       </ul>
     </li>
   </ul>
@@ -824,19 +824,19 @@
 
 
 	<p><img src="../images/githubpages.png" alt="GITHUBPAGES"></p>
-<h4 id="github-pages">Github Pages</h4>
-<p><strong>Github Pages</strong> là dịch vụ được tạo bởi GitHub cho phép xuất bản trang web hoặc ứng dụng web bằng cách lưu trữ nó trong kho GitHub miễn phí.</p>
-<p>Trong bài lab này mình sẽ hướng dẫn cách để triển khai Website tĩnh Hugo thông qua Github Pages bằng 3 cách:</p>
-<h4 id="tạo-single-page">Tạo Single Page</h4>
-<p>Cách này sẽ phù hợp với ai muốn triển khai 1 Website ở địa chỉ truy cập: <code>https://&lt;github_account&gt;.github.io</code><br>
-Mỗi tài khoản Github chỉ tạo được một website duy nhất với tên miền này.</p>
-<h4 id="tạo-multiple-pages">Tạo Multiple Pages</h4>
-<p>Cách này sẽ phù hợp với ai có nhiều Repository, muốn triển khai nhiều Website ở địa chỉ truy cập: <code>https://&lt;github_account&gt;.github.io/&lt;repository_name&gt;/</code><br>
-Có thể triển khai nhiều website trên 1 tài khoản Github bằng cách thêm tên của repository vào đường link.</p>
-<h4 id="multiple-pages-với-cicd">Multiple Pages với CI/CD</h4>
-<p>Trong cách này chúng ta sẽ thực hiện từng bước để xây dựng một <strong>Multiple Pages</strong> và có tích hợp quy trình CI/CD của <strong>Github Actions</strong> để build và triển khai một cách tự động khi developer push code lên Repository. <br>
-Trang web sẽ hoạt động trên tên miền: <code>https://&lt;github_account&gt;.github.io/&lt;repository_name&gt;/</code><br>
-Có thể triển khai nhiều website trên 1 tài khoản Github bằng cách thêm tên của repository vào đường link.</p>
+<h3 id="github-pages">Github Pages</h3>
+<p><strong>Github Pages</strong> is a service created by GitHub that allows publishing a website or web application by hosting it in a free GitHub repository.</p>
+<p>In this lab, I will show you how to deploy Hugo Static Website through Github Pages in 3 ways:</p>
+<h4 id="create-single-page">Create Single Page</h4>
+<p>This method will be suitable for anyone who wants to deploy a Website that works on the domain name: <code>https://&lt;github_account&gt;.github.io</code><br>
+Each Github account can only create a single website with this domain name.</p>
+<h4 id="create-multiple-pages">Create Multiple Pages</h4>
+<p>This method will be suitable for those who have many repositories, want to deploy many Websites work on the domain name: <code>https://&lt;github_account&gt;.github.io/&lt;repository_name&gt;/</code><br>
+It is possible to deploy multiple websites on 1 Github account by adding the name of the repository to the domain name.</p>
+<h4 id="multiple-pages-with-cicd">Multiple Pages with CI/CD</h4>
+<p>In this method we will go step by step to build a <strong>Multiple Pages</strong> and integrate the CI/CD workflow of <strong>Github Actions</strong> to build and deploy automatically when the developer push the code up to repository. <br>
+Website will work on domain name: <code>https://&lt;github_account&gt;.github.io/&lt;repository_name&gt;/</code><br>
+It is possible to deploy multiple websites on 1 Github account by adding the name of the repository to the domain name.</p>
 
 
 
@@ -1210,19 +1210,19 @@ Có thể triển khai nhiều website trên 1 tài khoản Github bằng cách 
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1691076871"></script>
-    <script src="../js/perfect-scrollbar.min.js?1691076871"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1691076871"></script>
-    <script src="../js/jquery.sticky.js?1691076871"></script>
-    <script src="../js/featherlight.min.js?1691076871"></script>
-    <script src="../js/highlight.pack.js?1691076871"></script>
+    <script src="../js/clipboard.min.js?1691377400"></script>
+    <script src="../js/perfect-scrollbar.min.js?1691377400"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1691377400"></script>
+    <script src="../js/jquery.sticky.js?1691377400"></script>
+    <script src="../js/featherlight.min.js?1691377400"></script>
+    <script src="../js/highlight.pack.js?1691377400"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom-3.6.0.js?1691076871"></script>
-    <script src="../js/learn.js?1691076871"></script>
-    <script src="../js/hugo-learn.js?1691076871"></script>
+    <script src="../js/modernizr.custom-3.6.0.js?1691377400"></script>
+    <script src="../js/learn.js?1691377400"></script>
+    <script src="../js/hugo-learn.js?1691377400"></script>
 
-    <link href="../mermaid/mermaid.css?1691076871" rel="stylesheet" />
-    <script src="../mermaid/mermaid.js?1691076871"></script>
+    <link href="../mermaid/mermaid.css?1691377400" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js?1691377400"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
