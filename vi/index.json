@@ -1,0 +1,155 @@
+[
+{
+	"uri": "/vi/1-introduce/",
+	"title": "Giới thiệu",
+	"tags": [],
+	"description": "",
+	"content": "\nGithub Pages Github Pages là dịch vụ được tạo bởi GitHub cho phép xuất bản trang web hoặc ứng dụng web bằng cách lưu trữ nó trong kho GitHub miễn phí.\nTrong bài lab này mình sẽ hướng dẫn cách để triển khai Website tĩnh Hugo thông qua Github Pages bằng 3 cách:\nTạo Single Page Cách này sẽ phù hợp với ai muốn triển khai 1 Website hoạt động ở tên miền: https://\u0026lt;github_account\u0026gt;.github.io\nMỗi tài khoản Github chỉ tạo được một website duy nhất với tên miền này.\nTạo Multiple Pages Cách này sẽ phù hợp với ai có nhiều repository, muốn triển khai nhiều Website hoạt động ở tên miền: https://\u0026lt;github_account\u0026gt;.github.io/\u0026lt;repository_name\u0026gt;/\nCó thể triển khai nhiều website trên 1 tài khoản Github bằng cách thêm tên của repository vào tên miền.\nMultiple Pages với CI/CD Trong cách này chúng ta sẽ thực hiện từng bước để xây dựng một Multiple Pages và có tích hợp quy trình CI/CD của Github Actions để build và triển khai một cách tự động khi developer push code lên repository. Website sẽ hoạt động trên tên miền: https://\u0026lt;github_account\u0026gt;.github.io/\u0026lt;repository_name\u0026gt;/\nCó thể triển khai nhiều website trên 1 tài khoản Github bằng cách thêm tên của repository vào tên miền.\n"
+},
+{
+	"uri": "/vi/3-singlepage/3.1-sourcecode/",
+	"title": "Push Code lên Repository",
+	"tags": [],
+	"description": "",
+	"content": "Ta sẽ tiến hành clone repository của chúng ta đã tạo ở bước 2.2 bằng cú pháp:\ngit clone https://\u0026lt;your_token\u0026gt;@github.com/\u0026lt;github_account\u0026gt;/\u0026lt;repository_name\u0026gt;.git Với:\n\u0026lt;your_token\u0026gt; : Là token bạn đã lưu lại ở bước 2.1 \u0026lt;github_account\u0026gt; : Là tên tài khoản github của bạn \u0026lt;repository_name\u0026gt; : Là tên repository bạn, trong trường hợp này là \u0026lt;github_account\u0026gt;.github.io Trình tự thực hiện Chuẩn bị màn hình làm việc Từ giao diện Git bash\nThực hiện câu lệnh git clone, sử dụng cú pháp đã đề cập phía trên. Hãy thay thế thông tin cho phù hợp với bạn git clone https://\u0026lt;your_token\u0026gt;@github.com/\u0026lt;github_account\u0026gt;/\u0026lt;github_account\u0026gt;.github.io.git Ta thấy thư mục \u0026lt;github_account\u0026gt;.github.io xuất hiện Điều hướng đến thư mục 000058-SessionManager Vào thư mục public Copy tất cả Source Code tại đây Điều hướng đến thư mục \u0026lt;github_account\u0026gt;.github.io vừa được clone về ở trên Dán tất cả Source Code vừa được Copy vào Quay trở lại giao diện Git bash Điều hướng đến thư mục \u0026lt;github_account\u0026gt;.github.io cd \u0026lt;github_account\u0026gt;.github.io Push tất cả Source Code lên trên Repository bằng các câu lệnh git add .\rgit commit -m \u0026#34;Add Source Code\u0026#34;\rgit push Truy cập vào trang Repository \u0026lt;github_account\u0026gt;.github.io của chúng ta trên Github, chúng ta sẽ thấy Source Code với commit message Add Source Code vừa xuất hiện "
+},
+{
+	"uri": "/vi/4-multiplepages/4.1-sourcecode/",
+	"title": "Push Code lên Repository",
+	"tags": [],
+	"description": "",
+	"content": "Ta sẽ tiến hành clone repository của chúng ta đã tạo ở bước 2.2 bằng cú pháp:\ngit clone https://\u0026lt;your_token\u0026gt;@github.com/\u0026lt;github_account\u0026gt;/\u0026lt;repository_name\u0026gt;.git Với:\n\u0026lt;your_token\u0026gt; : Là token bạn đã lưu lại ở bước 2.1 \u0026lt;github_account\u0026gt; : Là tên tài khoản github của bạn \u0026lt;repository_name\u0026gt; : Là tên repository bạn, trong trường hợp này là workshop1 Trình tự thực hiện Chuẩn bị màn hình làm việc Từ giao diện Git bash\nThực hiện câu lệnh git clone, sử dụng cú pháp đã đề cập phía trên. Hãy thay thế thông tin cho phù hợp với bạn git clone https://\u0026lt;your_token\u0026gt;@github.com/\u0026lt;github_account\u0026gt;/workshop1.git Ta thấy thư mục workshop1 xuất hiện Điều hướng đến thư mục 000058-SessionManager Vào thư mục public Copy tất cả Source Code tại đây Điều hướng đến thư mục workshop1 vừa được clone về ở trên Dán tất cả Source Code vừa được Copy vào Quay trở lại giao diện Git bash Điều hướng đến thư mục workshop1 cd workshop1 Push tất cả Source Code cần thiết lên trên Repository bằng các câu lệnh git add .\rgit commit -m \u0026#34;Add Source Code\u0026#34;\rgit push Truy cập vào trang Repository workshop1 của chúng ta trên Github, ta thấy Source Code với commit message Add Source Code vừa xuất hiện "
+},
+{
+	"uri": "/vi/5-multiplepagescicd/5.1-sourcecode/",
+	"title": "Push Code lên Repository",
+	"tags": [],
+	"description": "",
+	"content": "Ta sẽ tiến hành clone repository của chúng ta đã tạo ở bước 2.2 bằng cú pháp:\ngit clone https://\u0026lt;your_token\u0026gt;@github.com/\u0026lt;github_account\u0026gt;/\u0026lt;repository_name\u0026gt;.git Với:\n\u0026lt;your_token\u0026gt; : Là token bạn đã lưu lại ở bước 2.1 \u0026lt;github_account\u0026gt; : Là tên tài khoản github của bạn \u0026lt;repository_name\u0026gt; : Là tên repository bạn, trong trường hợp này là workshop2 Trình tự thực hiện Chuẩn bị màn hình làm việc Từ giao diện Git bash\nThực hiện câu lệnh git clone, sử dụng cú pháp đã đề cập phía trên. Hãy thay thế thông tin cho phù hợp với bạn git clone https://\u0026lt;your_token\u0026gt;@github.com/\u0026lt;github_account\u0026gt;/workshop2.git Ta thấy thư mục workshop2 xuất hiện Điều hướng đến thư mục 000058-SessionManager Copy tất cả Source Code tại đây ngoại trừ thư mục public Điều hướng đến thư mục workshop2 vừa được clone về ở trên Dán tất cả Source Code vừa được Copy vào Quay trở lại giao diện Git bash Điều hướng đến thư mục workshop2 cd workshop2 Push tất cả Source Code lên trên Repository bằng các câu lệnh git add .\rgit commit -m \u0026#34;Add Source Code\u0026#34;\rgit push Truy cập vào trang Repository workshop2 của chúng ta trên Github, ta thấy Source Code với commit message Add Source Code vừa xuất hiện "
+},
+{
+	"uri": "/vi/",
+	"title": "Triển khai Hugo Website với Github Pages",
+	"tags": [],
+	"description": "",
+	"content": "Triển khai Hugo Website với Github Pages Trong bài Lab này, chúng ta sẽ cùng tìm hiểu các bước để triển khai Hugo Website thông qua Github Pages.\nNội dung 1. Giới thiệu\n2. Các bước chuẩn bị\n3. Tạo Single Page\n4. Tạo Multiple Pages\n5. Multiple Pages với CI/CD\n"
+},
+{
+	"uri": "/vi/2-preparation/",
+	"title": "Các bước chuẩn bị",
+	"tags": [],
+	"description": "",
+	"content": "Trong bước này, chúng ta sẽ lần lượt thực hiện:\nTạo 1 Github Access Token Tạo 3 Github Repositories Chuẩn bị Hugo Source Code Nội dung 2.1 Tạo Access Token 2.2 Tạo Github Repositories 2.3 Chuẩn bị Hugo Source Code\n"
+},
+{
+	"uri": "/vi/2-preparation/2.1-createtoken/",
+	"title": "Tạo Github Access Token",
+	"tags": [],
+	"description": "",
+	"content": "Trình tự thực hiện Từ giao diện trang chủ của bạn trên Github Nhấn vào biểu tượng avatar user bên góc trên bên phải, chọn Settings Chúng ta sẽ được chuyển đến trang Settings Cuộn chuột xuống dưới cùng, chọn Developer Settings Tại trang Developer Settings, cuộn chuột xuống dưới cùng, tại mục Personal access tokens, chọn Tokens (classic) Tại mục Personal access tokens (classic), chọn Generate new token, sau đó chọn General new tokens (classic) (Bước này có thể Github sẽ bắt bạn cung cấp mật khẩu đăng nhập) Chúng ta sẽ được chuyển đến trang New persional access tokens (classic) Tại mục Note, nhập github_token Tại mục Select scopes, click chọn 2 mục là repo và workflow Cuộn chuột xuống dưới cùng, chọn Generate token Chúng ta sẽ được cung cấp một dãy token mới, hãy lưu lại token này để dùng cho những bước tiếp theo token này sau khi tạo chỉ xuất hiện 1 lần duy nhất, khi reload lại trang thì sẽ mất, nên lưu giữ cẩn thận\n"
+},
+{
+	"uri": "/vi/2-preparation/2.2-createrepo/",
+	"title": "Tạo Github Repositories",
+	"tags": [],
+	"description": "",
+	"content": "Trình tự thực hiện Từ giao diện trang chủ của bạn trên Github Nhấn vào biểu tượng avatar user bên góc trên bên phải, chọn Your Profile Chúng ta sẽ được chuyển đến trang Github User Chọn Repositories Chúng ta sẽ lần lượt tạo 3 Repositories cho các bước phía sau\n3. Tạo Repository cho Single Page\nChọn New Tại trang Create a new repository\nTại mục Repository name, nhập \u0026lt;github_account\u0026gt;.github.io (Với \u0026lt;github_account\u0026gt; là tên tài khoản Github của bạn),\ntrong trường hợp này mình nhập nhdinh39.github.io Tại mục Description, nhập This is repository for Single Page Chọn Create repository Tạo Repository cho Multiple Pages Quay trở lại trang Github User, chọn Repositories\nChọn New Tại trang Create a new repository\nTại mục Repository name, nhập workshop1 Tại mục Description, nhập This is repository for Multiple Pages Chọn Create repository Tạo Repository cho Multiple Pages với CI/CD Quay trở lại trang Github User, chọn Repositories\nChọn New Tại trang Create a new repository\nTại mục Repository name, nhập workshop2 Tại mục Description, nhập This is repository for Multiple Pages with CI/CD Chọn Create repository Hoàn thành tạo 3 Repositories "
+},
+{
+	"uri": "/vi/3-singlepage/3.2-githubpages/",
+	"title": "Thao tác với Github Pages",
+	"tags": [],
+	"description": "",
+	"content": "Trình tự thực hiện Từ giao diện Repository \u0026lt;github_account\u0026gt;.github.io của chúng ta trên Github Chọn Settings Chúng ta sẽ được chuyển đến trang Settings Chọn Pages Tại mục Source, chọn Github Actions Tại mục Static HTML, chọn Configure Chúng ta sẽ được đưa đến trang Edit Workflows Chọn Commit changes\u0026hellip; Giao diện Commit changes hiện lên, chọn Commit changes "
+},
+{
+	"uri": "/vi/4-multiplepages/4.2-githubpages/",
+	"title": "Thao tác với Github Pages",
+	"tags": [],
+	"description": "",
+	"content": "Trình tự thực hiện Từ giao diện repository workshop1 của chúng ta trên Github Chọn Settings Chúng ta sẽ được chuyển đến trang Settings Chọn Pages Tại mục Source, chọn Github Actions Tại mục Static HTML, chọn Configure Chúng ta sẽ được chuyển đến trang Edit Workflows Chọn Commit changes\u0026hellip; Giao diện Commit changes hiện lên, chọn Commit changes "
+},
+{
+	"uri": "/vi/5-multiplepagescicd/5.2-githubpages/",
+	"title": "Thao tác với Github Pages",
+	"tags": [],
+	"description": "",
+	"content": "Trình tự thực hiện Từ giao diện Repository workshop2 của chúng ta trên Github Chọn Settings Chúng ta sẽ được đưa đến trang Settings Chọn Pages Tại mục Source, chọn Github Actions Tại mục Hugo, chọn Configure Chúng ta sẽ được đưa đến trang Edit Workflows Ta tiến hành chỉnh sửa run: |\rhugo \\\r--minify \\\r--baseURL \u0026#34;${{ steps.pages.outputs.base_url }}/\u0026#34; Thành run: |\rhugo --minify Chọn Commit changes\u0026hellip; Giao diện Commit changes hiện lên, chọn Commit changes "
+},
+{
+	"uri": "/vi/2-preparation/2.3-preparecode/",
+	"title": "Chuẩn bị Source Code",
+	"tags": [],
+	"description": "",
+	"content": "\rTrước khi thực hiện những bước dưới đây, hãy đảm bảo rằng máy tính bạn đã cài Git bash\nNếu không bạn có thể download tại đây Download Git bash\nTrình tự thực hiện Tạo một thư mục mới trên máy tính của chúng ta. Mình đặt tên là WORKSHOP Copy thư mục Hugo Source Code của bạn vào thư mục WORKSHOP.\nỞ đây chúng ta sử dụng Source Code mẫu, bạn có thể Tải Source Code Mẫu và sau đó giải nén đến thư mục WORKSHOP với tên 000058-SessionManager Điều hướng vào bên trong thư mục 000058-SessionManager\nClick chuột phải tại vùng trống của thư mục, chọn Git Bash Here Giao diện Git Bash hiện ra, ấn đồng thời phím Window và phím mũi tên 🡒 hoặc Window và phím mũi tên ⭠ để chia đôi màn hình thành hai cửa sổ, bên phải là cửa sổ Git bash, bên trái là thư mục 000058-SessionManager để dễ thao tác cho những bước sau. (Không bắt buộc) Tại giao diện Git bash, lần lượt thực hiện các câu lệnh Hiển thị 10 dòng đầu tiên của file config.toml head -10 config.toml Thêm thuộc tính relativeURLs = true vào dòng đầu tiên của file config.toml sed -i \u0026#39;1 i\\relativeURLs = true\u0026#39; config.toml Hiển thị 10 dòng đầu tiên của file config.toml sau khi thay đổi, đã có thêm thuộc tính relativeURLs = true ở dòng đầu tiên head -10 config.toml Build lại Source Code Hugo sau khi đã có thay đổi trong file config.toml hugo Thêm thuộc tính relativeURLs = true vào dòng đầu tiên của file config.toml là bước mấu chốt của bài Lab này.\nNó sẽ cập nhật tất cả các đường dẫn tài nguyên như css, images, \u0026hellip; thành các đường dẫn tương đối, đảm bảo việc truy xuất tài nguyên đúng sau này.\n"
+},
+{
+	"uri": "/vi/3-singlepage/3.3-check/",
+	"title": "Kiểm tra Website",
+	"tags": [],
+	"description": "",
+	"content": "Trình tự thực hiện Từ giao diện Repository \u0026lt;github_account\u0026gt;.github.io của chúng ta trên Github Chọn Actions Chúng ta sẽ được chuyển đến giao diện Actions, ta thấy có một workflow Create static.yml đang chạy, đây chính là commit message mình đã thực hiện trong bước 3.2 Chờ cho đến khi workflow Create static.yml hoàn thành\nChọn Create static.yml Chúng ta sẽ được chuyển đến trang chi tiết hơn của workflow Create static.yml Tại mục deploy chúng ta sẽ thấy đường link của website chúng ta, hãy chọn vào nó Chúng ta sẽ thấy website của mình đang hoạt động trên tên miền https://\u0026lt;github_account\u0026gt;.github.io Vậy chúng ta bạn đã hoàn thành Tạo Single Page bằng Hugo Source Code trên chính Repository của mình\n"
+},
+{
+	"uri": "/vi/4-multiplepages/4.3-check/",
+	"title": "Kiểm tra Website",
+	"tags": [],
+	"description": "",
+	"content": "Trình tự thực hiện Từ giao diện Repository workshop1 của chúng ta trên Github Chọn Actions Chúng ta sẽ được đưa đến giao diện Actions, ta thấy có một workflow Create static.yml đang chạy, đây chính là commit message mình đã thực hiện trong bước 4.2 Chờ cho đến khi workflow Create static.yml hoàn thành\nChọn Create static.yml Chúng ta sẽ được đưa đến trang chi tiết hơn của workflow Create static.yml Tại mục deploy chúng ta sẽ thấy đường link của website chúng ta, hãy chọn vào nó Chúng ta sẽ thấy website của mình đang hoạt động trên tên miền https://\u0026lt;github_account\u0026gt;.github.io/workshop1/ Vậy chúng ta bạn đã hoàn thành Tạo Multiple Pages bằng Hugo Source Code trên chính Repository của mình.\n"
+},
+{
+	"uri": "/vi/5-multiplepagescicd/5.3-check/",
+	"title": "Kiểm tra Website",
+	"tags": [],
+	"description": "",
+	"content": "Trình tự thực hiện Từ giao diện repository workshop2 của chúng ta trên Github Chọn Actions Chúng ta sẽ được đưa đến giao diện Actions, ta thấy có một workflow Create static.yml đang chạy, đây chính là commit message mình đã thực hiện trong bước 5.2 Chờ cho đến khi workflow Create static.yml hoàn thành\nChọn Create static.yml Chúng ta sẽ được đưa đến trang chi tiết hơn của workflow Create static.yml Tại mục deploy chúng ta sẽ thấy đường link của website chúng ta, hãy chọn vào nó Chúng ta sẽ thấy website của mình đang hoạt động trên tên miền https://\u0026lt;github_account\u0026gt;.github.io/workshop2/ Vậy chúng ta bạn đã hoàn thành Tạo Multiple Page bằng quá trình CI/CD thông Github Actions. Tiếp theo chúng ta sẽ tiến hành Cập nhật Code rồi Kiểm tra lại website\n"
+},
+{
+	"uri": "/vi/3-singlepage/",
+	"title": "Tạo Single Page",
+	"tags": [],
+	"description": "",
+	"content": "Cách này sẽ phù hợp với ai muốn triển khai 1 Website hoạt động ở tên miền: https://\u0026lt;github_account\u0026gt;.github.io\nCác tài nguyên cần dùng trong bước này:\nGithub Repository: \u0026lt;github_account\u0026gt;.github.io đã tạo ở bước 2.2 Source Code trong thư mục public, đã được build lại sau khi chạy lệnh hugo ở bước 2.3 Nội dung 3.1 Push Code lên Repository\n3.2 Thao tác với Github Pages\n3.3 Kiểm tra Website\n"
+},
+{
+	"uri": "/vi/5-multiplepagescicd/5.4-updatecode/",
+	"title": "Cập nhật Code",
+	"tags": [],
+	"description": "",
+	"content": "\rTrước khi thực hiện những bước dưới đây, hãy đảm bảo rằng máy tính bạn đã cài Visual Studio Code\nNếu không bạn có thể download tại đây Download Visual Studio Code\nTrình tự thực hiện Tại giao diện Git bash Thực hiện câu lệnh git pull để cập nhật tất cả những thay đổi mới nhất của Github Repository workshop2 của chúng ta về máy local git pull Thực hiện câu lệnh code . để mở thư mục hiện tại bằng Visual Studio Code code . Trong giao diện Visual Studio Code vừa được mở Tại thư mục content, chọn _index.md, ta thực hiện thay đổi # Work with Amazon System Manager - Session Manager Thành # Work with Amazon System Manager - Session Manager - CI/CD Save những thay đổi. Và thoát khỏi Visual Studio Code\nQuay trở lại giao diện Git bash tiến hành push code lên Github Repository của chúng ta.\nBằng cách thực hiện lần lượt các câu lệnh\ngit add .\rgit commit -m \u0026#34;Edit Source Code\u0026#34;\rgit push "
+},
+{
+	"uri": "/vi/4-multiplepages/",
+	"title": "Tạo Multiple Pages",
+	"tags": [],
+	"description": "",
+	"content": "Cách này sẽ phù hợp với ai có nhiều Repository, muốn triển khai nhiều Website hoạt động ở tên miền: https://\u0026lt;github_account\u0026gt;.github.io/\u0026lt;repository_name\u0026gt;/\nCác tài nguyên cần dùng trong bước này:\nGithub Repository: workshop1, đã tạo ở bước 2.2 Source Code trong thư mục public, đã được build lại sau khi chạy lệnh hugo ở bước 2.3 Nội dung 4.1 Push Code lên Repository\n4.2 Thao tác với Github Pages\n4.3 Kiểm tra Website\n"
+},
+{
+	"uri": "/vi/5-multiplepagescicd/5.5-checkagain/",
+	"title": "Kiểm tra lại Website",
+	"tags": [],
+	"description": "",
+	"content": "Trình tự thực hiện Quay trở lại giao diện Actions repository workshop2 của chúng ta\nTa thấy có thêm một workflow Edit Source Code đang chạy, đây chính là commit message chúng ta đã thực hiện trong bước 5.4 Chờ cho đến khi workflow Edit Source Code hoàn thành Chúng ta reload lại trang web ở bước 5.3 hoặc chọn vào Edit Source Code để truy cập đường link https://\u0026lt;github_account\u0026gt;.github.io/workshop2/\nLúc này dòng chữ # Work with Amazon System Manager - Session Manager - CI/CD mà chúng ta đã chỉnh sửa ở bước 5.4 đã xuất hiện Vậy là bạn đã hoàn thành Tạo Multiple Page bằng quá trình CI/CD thông Github Actions.\nXin chúc mừng, làm đến bước này chắc chắn bạn đã lựa chọn được cho mình cách triển khai Website Hugo bằng Github Pages\n"
+},
+{
+	"uri": "/vi/5-multiplepagescicd/",
+	"title": "Multiple Pages với CI/CD",
+	"tags": [],
+	"description": "",
+	"content": "Trong cách này chúng ta sẽ thực hiện từng bước để xây dựng một Multiple Pages và có tích hợp quy trình CI/CD của Github Actions để build và triển khai một cách tự động khi developer push code lên repository. Website sẽ hoạt động trên tên miền: https://\u0026lt;github_account\u0026gt;.github.io/\u0026lt;repository_name\u0026gt;/\nCác tài nguyên cần dùng trong bước này:\nGithub Repository: workshop2 đã tạo ở bước 2.2 Tất cả Hugo Source Code ngoại trừ thư mục public Nội dung 5.1 Push Code lên Repository\n5.2 Thao tác với Github Pages\n5.3 Kiểm tra Website\n5.4 Cập nhật Code\n5.5 Kiểm tra lại Website\n"
+},
+{
+	"uri": "/vi/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
