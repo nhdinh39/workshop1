@@ -4,7 +4,7 @@
 	"title": "Deploy Hugo Website with Github Pages",
 	"tags": [],
 	"description": "",
-	"content": "Deploy Hugo Website with Github Pages In this Lab, we will learn the steps to deploy Hugo Website with Github Pages.\nContent 1. Introduction\n2. Preparation\n3. Create Single Page\n4. Create Multiple Pages\n5. Multiple Pages with CI/CD\n"
+	"content": "Deploy Hugo Website with Github Pages In this workshop, we will learn the steps to deploy Hugo Website with Github Pages.\nContent 1. Introduction\n2. Preparation\n3. Create Single Page\n4. Create Multiple Pages\n5. Multiple Pages with CI/CD\n"
 },
 {
 	"uri": "/1-introduce/",
